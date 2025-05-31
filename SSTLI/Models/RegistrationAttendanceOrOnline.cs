@@ -12,10 +12,10 @@ namespace SSTLI.Models
         public string NationalIdNumber { get; set; }
         public string City { get; set; }
         public string Branch { get; set; }
-        public DateTime Batch { get; set; }
+        public string Batch { get; set; }
         public AttendanceType AttendanceType { get; set; }
         public QualificationType QualificationType { get; set; }
-        public string EducationalQualification { get; set; }
+        public string? EducationalQualification { get; set; }
         public string? Message { get; set; }
         public string? attachNationalIdImage { get; set; }
         public string? AttachEducationalQualificationImage { get; set; }
