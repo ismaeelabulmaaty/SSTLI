@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SSTLI.Data;
 
@@ -10,9 +11,11 @@ using SSTLI.Data;
 namespace SSTLI.Data.Migrations
 {
     [DbContext(typeof(SstliDbContext))]
-    partial class SstliDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250531072407_updateBatch")]
+    partial class updateBatch
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
